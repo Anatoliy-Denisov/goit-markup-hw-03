@@ -6,6 +6,7 @@
   --background-color: #e5e5e5;
   --background-color-hero: #2f303a;
   --portfolio-margin-item: 30px;
+  --background-color-team: #f5f4fa;
 }
 body {
   background-color: var(--background-color);
@@ -16,6 +17,7 @@ body {
   font-size: 14px;
 }
 .container {
+  margin: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -33,6 +35,10 @@ p {
 
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+.images-section {
+  padding-top: 0;
   padding-bottom: 94px;
 }
 .list {
@@ -80,6 +86,7 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 5px 5px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -101,6 +108,7 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 5px 5px;
 }
 .site-contact .contact:hover,
 .site-contact .contact:focus {
@@ -202,7 +210,7 @@ p {
 
 /* team section */
 .team-section {
-  background-color: var();
+  background-color: var(--background-color-team);
 }
 .team-section-title {
   margin-bottom: 50px;
@@ -215,6 +223,10 @@ p {
 }
 .team-list {
   display: flex;
+}
+.img-team-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .team-list .item:not(:last-child) {
   margin-right: 30px;
@@ -245,6 +257,7 @@ p {
   font-style: normal;
   color: var(--white-color);
   line-height: 1.71;
+  margin-top: 20px;
 }
 .footer-contact-list .footer-contact {
   font-style: normal;
@@ -255,9 +268,7 @@ p {
 .logo-part-footer {
   color: var(--white-color);
 }
-.logo-container {
-  margin-bottom: 20px;
-}
+
 .footer-contact-list .item {
   margin-top: 9px;
 }
